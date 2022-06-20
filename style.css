@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-font);
+    background-color: var(--color-backgroud);
+    text-align: center;
+}
+
+:root {
+    --color-backgroud: #2f3640;
+    --color-font: #f5f6fa;
+    --color-square: #dcdde1;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    background-color: var(--color-square);
+    display: inline-block;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.square:hover {
+    box-shadow: 0px 0px 15px #00a8ff;
+}
