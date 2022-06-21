@@ -11,6 +11,10 @@ body {
     --color-square: #dcdde1;
 }
 
+h1 {
+    font-size: 70px;
+}
+
 .square {
     width: 150px;
     height: 150px;
