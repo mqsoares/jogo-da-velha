@@ -15,6 +15,11 @@ h1 {
     font-size: 70px;
 }
 
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
 .square {
     width: 150px;
     height: 150px;
@@ -22,6 +27,7 @@ h1 {
     display: inline-block;
     margin: 3px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .square:hover {
