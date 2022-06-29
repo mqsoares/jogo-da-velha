@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    let squares = document.querySelectorAll(".square");
+    const squares = document.querySelectorAll(".square");
 
     squares.forEach((square) => {
         square.addEventListener('click', handleClick);
@@ -10,29 +10,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function handleClick(event) {
 
-
-    let square = event.target;
-    let postion = square.id;
+    const square = event.target;
+    const postion = square.id;
 
     if (handleMove(postion)) {
-
         setTimeout(() => {
-            alert(" O Jogo Acabou - O Vencedor foi " + playerTime);
+            alert(` Player ${playerTime + 1} Venceu!`);
         }, 10);
-
     };
+
     updateSquare(postion);
 }
 
 function updateSquare(postion) {
-    let square = document.getElementById(postion.toString());
-    let symbol = board[postion];
+
+    const square = document.getElementById(postion.toString());
+    const symbol = board[postion];
     square.innerHTML = `<div class='${symbol}'></div>`
+
 }
 
 function updateSquares() {
 
-    let squares = document.querySelectorAll(".square");
+    const squares = document.querySelectorAll(".square");
 
     squares.forEach((square) => {
         let postion = square.id;
