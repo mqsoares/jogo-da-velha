@@ -31,8 +31,8 @@ function handleMove(position) {
             playerTime = (playerTime == 0) ? 1 : 0;
         }
     }
-
     return gameOver;
+    
 }
 
 function isWin() {
@@ -50,8 +50,7 @@ function isWin() {
 
             return true;
         }
-
     }
-
     return false;
+
 }

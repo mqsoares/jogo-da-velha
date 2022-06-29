@@ -25,15 +25,11 @@ function handleClick(event) {
                 displayP2.textContent = p2Score;
             }
             alert(` Player ${playerTime + 1} Venceu!`);
-            board = ['', '', '', '', '', '', '', '', ''];
-            playerTime = 0;
-            gameOver = false;
-            
               
         }, 10);
     };
-
     updateSquare(postion);
+
 }
 
 function updateSquare(postion) {
@@ -58,3 +54,17 @@ function updateSquares() {
     })
 
 }
+
+const reset = document.querySelector("#restart")
+reset.addEventListener('click', () => {
+    
+    const squares = document.querySelectorAll(".square");
+    squares.forEach((square) => {
+        square.innerHTML = ``;        
+    })
+
+    board = ['', '', '', '', '', '', '', '', ''];
+    playerTime = playerTime;
+    gameOver = false; 
+    
+})
