@@ -84,3 +84,17 @@ h1 {
     top: 0;
     bottom: 0;
 }
+
+#restart {
+    cursor: pointer;
+    font-size: 20px;
+    background-color: var(--color-font);
+    color: var(--color-backgroud);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+#restart:hover {
+    box-shadow: 0 8px 8px -2px var(--color-arrow);
+}
