@@ -7,17 +7,25 @@ body {
 
 :root {
     --color-backgroud: #2f3640;
-    --color-font: #f5f6fa;
+    --color-font: #ccd6ff;
     --color-square: #dcdde1;
+    --color-arrow: #00a8ff;
+    --color-p1: #ff0000;
+    --color-p2: #008000;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
 }
 
 h1 {
     font-size: 70px;
 }
 
-main {
-    display: flex;
-    justify-content: space-around;
+.playerOfTime {
+    color: var(--color-arrow);
+    font-size: 50px;
 }
 
 .square {
@@ -32,6 +40,19 @@ main {
 
 .square:hover {
     box-shadow: 0px 0px 15px #00a8ff;
+}
+
+.displayP1 {
+    color: var(--color-p1);
+}
+
+.displayP2 {
+    color: var(--color-p2);
+}
+
+.score {
+    font-size: 120px;
+    font-weight: bold;
 }
 
 .o {

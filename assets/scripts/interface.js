@@ -1,3 +1,6 @@
+const ofTime1 = document.querySelector(".ofTime1");
+const ofTime2 = document.querySelector(".ofTime2");
+
 document.addEventListener('DOMContentLoaded', () => {
 
     const squares = document.querySelectorAll(".square");
@@ -5,6 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
     squares.forEach((square) => {
         square.addEventListener('click', handleClick);
     })
+
+    if(playerTime == 0){
+        ofTime2.style.color = "#2f3640"
+    }
 
 })
 
@@ -24,7 +31,11 @@ function handleClick(event) {
                 p2Score += 1;
                 displayP2.textContent = p2Score;
             }
-            alert(` Player ${playerTime + 1} Venceu!`);
+            alert(`### Jogador ${playerTime + 1} Venceu!
+Quem vence, inicia jogando na próxima. ;-)
+            
+            Novo Jogo - Continuar Jogando
+            F5 - Resetar Placar`);
               
         }, 10);
     };
@@ -38,6 +49,15 @@ function updateSquare(postion) {
     const symbol = board[postion];
     square.innerHTML = `<div class='${symbol}'></div>`
 
+   
+
+    if(playerTime == 0){
+        ofTime1.style.color = "#00a8ff"
+        ofTime2.style.color = "#2f3640"
+    }else {
+        ofTime1.style.color = "#2f3640"
+        ofTime2.style.color = "#00a8ff"
+    }
 }
 
 function updateSquares() {
