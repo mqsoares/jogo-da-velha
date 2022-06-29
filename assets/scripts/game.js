@@ -1,7 +1,9 @@
-const board = ['', '', '', '', '', '', '', '', ''];
+let board = ['', '', '', '', '', '', '', '', ''];
 const symbols = ['o', 'x'];
 let playerTime = 0;
 let gameOver = false;
+let p1Score = 0;
+let p2Score = 0;
 
 const winStates = [
     [0, 1, 2],
