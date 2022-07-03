@@ -13,9 +13,6 @@
 </a>
 
 
-
-#### Projeto desenvolvido no curso do ProgBR
-
 <p align="center">
   <img alt="mockup" src="./assets/gif/jogoDaVelha.gif" width="100%">
 </p>
